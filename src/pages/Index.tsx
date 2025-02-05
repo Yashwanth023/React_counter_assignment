@@ -10,22 +10,26 @@ const Index = () => {
           React Project Dashboard
         </h1>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-scale-in">
+        {/* First Row - Counter */}
+        <div className="max-w-xl mx-auto animate-scale-in">
           <section className="space-y-6 hover:scale-105 transition-transform duration-300">
             <h2 className="text-2xl font-semibold text-center text-purple-800">Counter Component</h2>
             <Counter />
           </section>
+        </div>
 
+        {/* Second Row - Editor and Form */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 animate-scale-in">
           <section className="space-y-6 hover:scale-105 transition-transform duration-300">
             <h2 className="text-2xl font-semibold text-center text-purple-800">Rich Text Editor</h2>
             <RichTextEditor />
           </section>
-        </div>
 
-        <section className="space-y-6 mt-12 animate-fade-in hover:scale-105 transition-transform duration-300">
-          <h2 className="text-2xl font-semibold text-center text-purple-800">User Data Form</h2>
-          <UserForm />
-        </section>
+          <section className="space-y-6 hover:scale-105 transition-transform duration-300">
+            <h2 className="text-2xl font-semibold text-center text-purple-800">User Data Form</h2>
+            <UserForm />
+          </section>
+        </div>
       </div>
     </div>
   );
