@@ -1,21 +1,29 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import { Bold, Italic, Underline, List } from "lucide-react";
 import { toast } from "@/components/ui/use-toast";
 
 const RichTextEditor = () => {
   const [content, setContent] = useState('');
+  const editorRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const savedContent = localStorage.getItem('editorContent');
     if (savedContent) {
       setContent(savedContent);
+      if (editorRef.current) {
+        editorRef.current.innerHTML = savedContent;
+      }
       console.log('Loaded editor content from localStorage');
     }
   }, []);
 
   const handleFormat = (command: string) => {
     document.execCommand(command, false);
+    if (editorRef.current) {
+      setContent(editorRef.current.innerHTML);
+      localStorage.setItem('editorContent', editorRef.current.innerHTML);
+    }
     console.log('Applied formatting:', command);
   };
 
@@ -75,6 +83,7 @@ const RichTextEditor = () => {
       </div>
 
       <div
+        ref={editorRef}
         className="min-h-[200px] border rounded-lg p-4 mb-4 focus:outline-none"
         contentEditable
         onInput={handleChange}
