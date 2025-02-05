@@ -59,3 +59,22 @@ npm run dev
 # Build for production
 npm run build
 ```
+
+## Screenshots
+
+![screencapture-preview-style-splash-haven-lovable-app-2025-02-05-11_35_31](https://github.com/user-attachments/assets/91eb7900-453d-401c-941e-9feadc3e1b38)
+
+![screencapture-preview-style-splash-haven-lovable-app-2025-02-05-11_35_59](https://github.com/user-attachments/assets/6fa8edce-5d2b-4dfe-8704-ead2db8ae93b)
+
+![screencapture-preview-style-splash-haven-lovable-app-2025-02-05-11_37_46](https://github.com/user-attachments/assets/b3070397-e692-4e8f-9c9d-3ac124e2e189)
+
+![screencapture-preview-style-splash-haven-lovable-app-2025-02-05-11_38_02](https://github.com/user-attachments/assets/dae51a6e-6ea2-4484-b21f-7e6ca9bb0660)
+
+![screencapture-preview-style-splash-haven-lovable-app-2025-02-05-11_40_23](https://github.com/user-attachments/assets/8772cc57-bc7d-4bf0-a09d-d388e0a2d41b)
+
+
+
+
+
+
+
